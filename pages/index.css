@@ -85,28 +85,19 @@
 }
 
 .header__footer {
-  list-style-type: none;
+  margin-top: auto;
+
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 40px;
-  left: 80px;
-  margin: 0px;
-  padding: 0px;
+  flex-direction: row;
 
-  font-weight: 500;
+  align-items: flex-end;
+  justify-content: space-between;
 
-  color: #838383;
+  padding: 0px 80px 40px;
 }
 
 .paragraph {
-  position: absolute;
-  bottom: 40px;
-  right: 80px;
-  margin: 0px;
-
   font-weight: 500;
-
   color: #838383;
 }
 

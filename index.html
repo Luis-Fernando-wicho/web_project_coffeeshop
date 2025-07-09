@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <!-- idioma -->
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -8,19 +10,27 @@
     <meta name="description" content="pagina de cafeteria" />
     <meta name="keywords" content="cafeteria" />
     <title>"Cafetería"</title>
+
     <!-- hojas de estilos -->
+
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
+
     <!-- icono de pagina -->
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
     <!-- fuente inter -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+
     <!-- fuente noto serif -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,15 +38,23 @@
       rel="stylesheet"
     />
   </head>
+
+  <!-- pagina web -->
+
   <body>
     <div class="page">
+      <!-- Ecabezado -->
+
       <header class="header">
+        <!-- panel navegacion -->
+
         <nav class="nav">
           <img
             class="nav__logo"
             src="./images/logo_coffeeshop_dark.svg"
             alt="logotipo"
           />
+
           <ul class="nav__links">
             <li>
               <a href="#recipes" class="nav__link">Recetas</a>
@@ -49,6 +67,9 @@
             </li>
           </ul>
         </nav>
+
+        <!-- titulo, descripcion e imagen -->
+
         <h1 class="header__title">
           <span class="header__span-accent">Café de especialidad </span>
           <br />en Triple Peaks
@@ -62,6 +83,9 @@
           src="/images/inside_coffee_shop.png"
           alt="imagen de cafeteria"
         />
+
+        <!-- footer horarios -->
+
         <div class="header__footer">
           <div>
             <p class="header__paragraph">Horario:</p>
@@ -77,13 +101,20 @@
           </p>
         </div>
       </header>
+
+      <!-- contenido principal de pagina web -->
+
       <main class="content">
+        <!-- seccion de recetas videos -->
+
         <section class="recipes" id="recipes">
+          <!-- titulo -->
           <h2 class="recipes__title">Recetas</h2>
           <h3 class="recipes__subtitle">
             Echa un vistazo a las recetas que hemos reunido para que elabores
             tus propios snacks.
           </h3>
+          <!-- videos -->
           <div class="recipes__videos">
             <div class="recipes__video-item">
               <iframe
@@ -94,11 +125,13 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
+
               <ul class="recipes__video-caption">
                 <li>Receta en Aeropress</li>
                 <li>~5 min</li>
               </ul>
             </div>
+
             <div class="recipes__video-item">
               <iframe
                 class="recipes__iframe"
@@ -108,6 +141,7 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
+
               <ul class="recipes__video-caption">
                 <li>Receta en cafetera francesa</li>
                 <li>~15 min</li>
@@ -115,7 +149,49 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <!-- proyecto 4 parte 3 -->
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <div class="reservation__form">
+            <form class="form__fieldset">
+              <label class="form__label" for="nome"
+                >Nombre
+                <input class="form__input" type="text" placeholder="Nombre" />
+              </label>
+
+              <label class="form__label" for="nome"
+                >Número de comensales
+                <input class="form__input" type="number" placeholder="1-8" />
+              </label>
+
+              <label class="form__label" for="nome"
+                >Fecha y hora <input class="form__input" type="date" />
+              </label>
+
+              <label class="form__label" for="nome"
+                >Tu correo electrónico
+                <input
+                  class="form__input"
+                  type="email"
+                  placeholder="email@email.com"
+                />
+              </label>
+            </form>
+
+            <button type="submit" class="form__button">
+              Reservar una mesa
+            </button>
+
+            <div class="form__checkbox">
+              <input
+                type="checkbox"
+                id="términos"
+                class="form__checkbox-input"
+              />
+              Acepto los términos de uso
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>

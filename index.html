@@ -153,11 +153,15 @@
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
           <div class="reservation__form">
-            <form class="form__fieldset">
-              <label class="form form__label" for="nombre"
+            <form
+              class="form__fieldset"
+              action="/procesar-formulario"
+              method="POST"
+            >
+              <label class="form__fieldset__label" for="nombre"
                 >Nombre
                 <input
-                  class="form form__input"
+                  class="form__fieldset__input"
                   type="text"
                   placeholder="Nombre"
                   id="nombre"
@@ -165,10 +169,10 @@
                 />
               </label>
 
-              <label class="form form__label" for="numero"
+              <label class="form__fieldset__label" for="numero"
                 >Número de comensales
                 <input
-                  class="form form__input"
+                  class="form__fieldset__input"
                   type="number"
                   placeholder="1-8"
                   id="numero"
@@ -176,20 +180,20 @@
                 />
               </label>
 
-              <label class="form form__label" for="Fechayhora"
+              <label class="form__fieldset__label" for="Fechayhora"
                 >Fecha y hora
                 <input
-                  class="form form__input"
+                  class="form__fieldset__input"
                   type="date"
                   id="Fechayhora"
                   required
                 />
               </label>
 
-              <label class="form form__label" for="correoElectrónico"
+              <label class="form__fieldset__label" for="correoElectrónico"
                 >Tu correo electrónico
                 <input
-                  class="form form__input"
+                  class="form__fieldset__input"
                   type="email"
                   placeholder="email@email.com"
                   id="correoElectrónico"
@@ -198,15 +202,15 @@
               </label>
             </form>
 
-            <button type="submit" class="form form__button">
+            <button type="submit" class="form__fieldset__button">
               Reservar una mesa
             </button>
 
-            <div class="form form__checkbox">
+            <div class="form__fieldset__checkbox">
               <input
                 type="checkbox"
                 id="términos"
-                class="form form__checkbox-input"
+                class="form__checkbox-input"
                 required
               />
               Acepto los términos de uso
